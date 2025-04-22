@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE MANGA CLUB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('manga.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh; 
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(68, 68, 68, 0.9);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .manga-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .manga-card {
+            background-color: rgba(245, 245, 245, 0.9);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .manga-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LE MANGA CLUB</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <button type="submit" onclick="window.location.href='index.html'">Home</button>
+            <button type="submit" onclick="window.location.href='mpopular.html'">Popular</button>                   
+       </ul>
+    </nav>
+
+    <div class="container">
+        <h2><p style="color: red;">Featured Manga</p></h2>
+        <div class="manga-grid">
+            <div class="manga-card">
+                <img src="origin.jpg" alt="Manga 1">
+                <h3>Pokemon Adventures</h3>
+                <p>Adventure of red to become world champion</p>
+                <button id="read-btn"><a href="https://mangareader.to/pokemon-adventures-474?ref=search">▶ START READING </a></button>
+            </div>
+            <div class="manga-card">
+                <img src="bleach.jpg" alt="Manga 2">
+                <h3>Bleach</h3>
+                <p>Ichigo kurosaki turns into soul reaper to save his family and friends</p>
+                <button id="read-btn"><a href="https://mangareader.to/bleach-1623?ref=search">▶ START READING </a></button>
+            </div>
+            <div class="manga-card">
+                <img src="jjk.jpg" alt="Manga 3">
+                <h3>Jujustu Kaisen</h3>
+                <p>jujustu socecers fight curse energy</p>
+                <button id="read-btn"><a href="https://mangareader.to/jujutsu-kaisen-168?ref=search">▶ START READING </a></button>
+            </div>
+            <div class="manga-card">
+                <img src="chain.jpg" alt="Manga 4">
+                <h3>Chainsaw Man</h3>
+                <p>To fulfill his adult desire</p>
+                <button id="read-btn"><a href="https://mangareader.to/chainsaw-man-colored-edition-56074?ref=search">▶ START READING </a></button>
+         </div>
+            <div class="manga-card">
+                <img src="tokyo.jpg" alt="Manga 5">
+                <h3>Tokyo Revengers</h3>
+                <p>To become the no.1 gang tokyo and to save his gf by time travel</p>
+                <button id="read-btn"><a href="https://mangareader.to/tokyo-revengers-222?ref=search">▶ START READING </a></button>
+
+   
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 LE MANGA CLUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
